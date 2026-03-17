@@ -12,9 +12,9 @@ interface LessonNode {
 }
 
 const lessons: LessonNode[] = [
-  { id: 1, title: "Food", thaiTitle: "ทักทาย", status: "completed", offsetX: 0 },
+  { id: 1, title: "Food", thaiTitle: "อาหาร", status: "completed", offsetX: 0 },
   { id: 2, title: "Numbers", thaiTitle: "ตัวเลข", status: "completed", offsetX: -30 },
-  { id: 3, title: "Greetings", thaiTitle: "อาหาร", status: "active", offsetX: -50 },
+  { id: 3, title: "Greetings", thaiTitle: "ทักทาย", status: "active", offsetX: -50 },
   { id: 4, title: "Family", thaiTitle: "ครอบครัว", status: "locked", offsetX: -20 },
   { id: 5, title: "Colors", thaiTitle: "สี", status: "locked", offsetX: 20 },
   { id: 6, title: "Animals", thaiTitle: "สัตว์", status: "locked", offsetX: 50 },
