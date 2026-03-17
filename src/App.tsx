@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import BottomNav from "@/components/BottomNav";
+import SplashScreen from "./pages/SplashScreen";
 import HomePage from "./pages/HomePage";
 import QuestsPage from "./pages/QuestsPage";
 import LeaderboardPage from "./pages/LeaderboardPage";
@@ -19,7 +20,8 @@ const App = () => (
       <Toaster />
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<HomePage />} />
+          <Route path="/" element={<SplashScreen />} />
+          <Route path="/home" element={<HomePage />} />
           <Route path="/quests" element={<QuestsPage />} />
           <Route path="/leaderboard" element={<LeaderboardPage />} />
           <Route path="/shop" element={<ShopPage />} />
