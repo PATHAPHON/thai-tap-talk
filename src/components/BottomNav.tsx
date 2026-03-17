@@ -14,7 +14,7 @@ const BottomNav = () => {
   const navigate = useNavigate();
 
   // Hide nav during lessons
-  if (location.pathname.startsWith("/lesson")) return null;
+  if (location.pathname.startsWith("/lesson") || location.pathname === "/") return null;
 
   return (
     <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[430px] bg-nav border-t-2 border-nav-active/30 z-50">
