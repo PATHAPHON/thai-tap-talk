@@ -159,7 +159,7 @@ const LeaderboardPage = () => {
       </div>
 
       {/* Attack Power-Up Bar */}
-      <div className="fixed bottom-[68px] left-1/2 -translate-x-1/2 w-full max-w-[430px] bg-card border-t border-border px-4 py-3 z-40">
+      <div className="fixed bottom-[68px] left-1/2 z-40 w-full max-w-[48rem] -translate-x-1/2 bg-card border-t border-border px-4 py-3">
         <p className="text-[10px] font-bold text-muted-foreground mb-2 uppercase tracking-wider">
           Your Power-Ups
         </p>

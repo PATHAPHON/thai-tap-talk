@@ -64,11 +64,20 @@
     font-family: var(--font-display);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    max-width: 430px;
-    margin: 0 auto;
     min-height: 100vh;
-    position: relative;
+    width: 100%;
     overflow-x: hidden;
+  }
+
+  #root {
+    min-height: 100vh;
+  }
+
+  .app-shell {
+    width: min(100%, 48rem);
+    min-height: 100vh;
+    margin: 0 auto;
+    position: relative;
   }
 
   .font-thai {

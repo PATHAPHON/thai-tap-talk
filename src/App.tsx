@@ -19,17 +19,19 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<SplashScreen />} />
-          <Route path="/home" element={<HomePage />} />
-          <Route path="/quests" element={<QuestsPage />} />
-          <Route path="/leaderboard" element={<LeaderboardPage />} />
-          <Route path="/shop" element={<ShopPage />} />
-          <Route path="/profile" element={<ProfilePage />} />
-          <Route path="/lesson/:id" element={<LessonPage />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-        <BottomNav />
+        <div className="app-shell">
+          <Routes>
+            <Route path="/" element={<SplashScreen />} />
+            <Route path="/home" element={<HomePage />} />
+            <Route path="/quests" element={<QuestsPage />} />
+            <Route path="/leaderboard" element={<LeaderboardPage />} />
+            <Route path="/shop" element={<ShopPage />} />
+            <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/lesson/:id" element={<LessonPage />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          <BottomNav />
+        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>

@@ -17,7 +17,7 @@ const BottomNav = () => {
   if (location.pathname.startsWith("/lesson") || location.pathname === "/") return null;
 
   return (
-    <nav className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[430px] bg-nav border-t-2 border-nav-active/30 z-50">
+    <nav className="fixed bottom-0 left-1/2 z-50 w-full max-w-[48rem] -translate-x-1/2 bg-nav border-t-2 border-nav-active/30">
       <div className="flex items-center justify-around py-2 pb-[env(safe-area-inset-bottom,8px)]">
         {navItems.map(({ path, icon: Icon, label }) => {
           const isActive = location.pathname === path;
